@@ -15,6 +15,7 @@ func test(s string) string {
 
 func copyToClipboard(s string) {
 	clipboard.WriteAll(s)
+	fmt.Printf("\nOutput: %s\n", s)
 	fmt.Println("Copying output to Clipboard...\n")
 	return
 }
